@@ -67,7 +67,7 @@ public class Dragon extends Enemy
 
     public String toString()
     {
-        return super.toString() + ", Has Fire: " + hasFire +
+        return "Dragon" + super.toString() + ", Has Fire: " + hasFire +
                 ", Wingspan: " + wingspan + "}";
     }
 }

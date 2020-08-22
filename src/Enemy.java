@@ -89,7 +89,7 @@ public abstract class Enemy
 
     public String toString()
     {
-        return "Dragon{" + "Dragon Name: " + name + ", " + "Might: " + Might +
+        return "{" + "Name: " + name + ", " + "Might: " + Might +
                 ", " + "isHostile: " + isHostile + ", Health: " + health + ", Movement: " + movement +
                 ", Speed: " + speed;
     }

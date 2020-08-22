@@ -41,7 +41,7 @@ public class Slime extends Enemy
 
     public String toString()
     {
-        return super.toString() + ", Can Divide: " + canDivide + "}";
+        return "Slime" + super.toString() + ", Can Divide: " + canDivide + "}";
     }
 }
 

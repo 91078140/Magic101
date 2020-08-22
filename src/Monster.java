@@ -86,7 +86,7 @@ public class Monster extends Enemy
 
     public String toString()
     {
-        return super.toString() +", Terrain: " + terrain + ", Has Advantage: " + hasAdvantage + "}";
+        return "Monster" + super.toString() +", Terrain: " + terrain + ", Has Advantage: " + hasAdvantage + "}";
     }
 
 }
