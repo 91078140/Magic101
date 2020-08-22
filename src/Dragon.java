@@ -4,9 +4,9 @@ public class Dragon extends Enemy
     public boolean hasFire;
     public double wingspan;
 
-    public Dragon(String dragonName, int might, boolean IsHostile, int HP, int movement, double speed, boolean hasFire, double wingspan)
+    public Dragon(String dragonName, int might, boolean IsHostile, int HP, int movement, double speed, boolean isWeakToMagic, boolean hasFire, double wingspan)
     {
-        super(dragonName, might, IsHostile, HP, movement, speed);
+        super(dragonName, might, IsHostile, HP, movement, speed, isWeakToMagic);
         this.hasFire = hasFire;
         this.wingspan = checkWingSpan(wingspan);
     }// full constructor

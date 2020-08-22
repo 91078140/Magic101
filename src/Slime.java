@@ -2,9 +2,9 @@ public class Slime extends Enemy
 {
     public boolean canDivide;
 
-    public Slime(String slimeName, int might, boolean IsHostile, int HP, int movement, double speed, boolean canDivide)
+    public Slime(String slimeName, int might, boolean IsHostile, int HP, int movement, double speed, boolean isWeakToMagic, boolean canDivide)
     {
-        super(slimeName, might, IsHostile, HP, movement, speed);
+        super(slimeName, might, IsHostile, HP, movement, speed, isWeakToMagic);
         this.canDivide = canDivide;
     }
 

@@ -6,8 +6,9 @@ public abstract class Enemy
     public String name;
     public int Might;
     public boolean isHostile;
+    public boolean isWeakToMagic;
 
-    public Enemy(String Name, int might, boolean IsHostile, int HP, int movement, double speed)
+    public Enemy(String Name, int might, boolean IsHostile, int HP, int movement, double speed, boolean isWeakToMagic)
     {
         this.name = Name;
         this.Might = might;
@@ -15,6 +16,7 @@ public abstract class Enemy
         this.health = HP;
         this.movement = movement;
         this.speed = speed;
+        this.isWeakToMagic = isWeakToMagic;
     }// full constructor
 
     public Enemy()
@@ -25,7 +27,17 @@ public abstract class Enemy
         this.health = 0;
         this.movement = 0;
         this.speed = 0.0;
+        this.isWeakToMagic = false;
     }
+
+    //brain methods
+    public int takeDamage()
+    {
+        return 1;
+    }
+
+
+    // getters & setters
     public String getName()
     {
         return name;
@@ -54,6 +66,11 @@ public abstract class Enemy
     public double getSpeed()
     {
         return speed;
+    }
+
+    public boolean isWeakToMagic()
+    {
+        return isWeakToMagic;
     }
 
     //setters
@@ -87,11 +104,16 @@ public abstract class Enemy
         this.speed = speed;
     }
 
+    public void setWeakToMagic(boolean weakToMagic)
+    {
+        isWeakToMagic = weakToMagic;
+    }
+
     public String toString()
     {
         return "{" + "Name: " + name + ", " + "Might: " + Might +
                 ", " + "isHostile: " + isHostile + ", Health: " + health + ", Movement: " + movement +
-                ", Speed: " + speed;
+                ", Speed: " + speed + ", Weak To Magic: " + isWeakToMagic;
     }
 
 }

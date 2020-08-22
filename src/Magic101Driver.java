@@ -4,14 +4,14 @@ public class Magic101Driver
 {
     public static void main(String[] args)
     {
-        Dragon happy = new Dragon("Happy", 20, false, 40, 3, 2.5, true, 4.6);
-        Dragon smog = new Dragon("Smog", 40, true, 60, 4, 2.1, true, 5.9);
+        Dragon happy = new Dragon("Happy", 20, false, 40, 3, 2.5, false, true, 4.6);
+        Dragon smog = new Dragon("Smog", 40, true, 60, 4, 2.1, false, true, 5.9);
         Dragon empty = new Dragon();
-        Monster werewolf = new Monster("Lupin", 10, true, 30, 2, 4.2, "Woods", true);
-        Monster goblin = new Monster("Bak", 5, true, 15, 1, 6.1, "Cave", false);
+        Monster werewolf = new Monster("Lupin", 10, true, 30, 2, 4.2, true, "Woods", true);
+        Monster goblin = new Monster("Bak", 5, true, 15, 1, 6.1, true, "Cave", false);
         Monster shadow = new Monster();
-        Slime blob = new Slime("Blobby", 2, false, 5, 1, 6.7, false);
-        Slime glop = new Slime("Globy", 3, true, 8, 1, 6.7, true);
+        Slime blob = new Slime("Blobby", 2, false, 5, 1, 6.7, false, false);
+        Slime glop = new Slime("Globy", 3, true, 8, 1, 6.7, true, true);
         Slime muck = new Slime();
         Enemy[] enemyList = {happy, smog, empty, werewolf, goblin, shadow, blob, glop, muck};
 
@@ -30,10 +30,10 @@ public class Magic101Driver
         }
 
         //more tests
-        System.out.println();
+       /* System.out.println();
         System.out.println(blob.divide());
         System.out.println(glop.divide());
-        System.out.println(muck.divide());
+        System.out.println(muck.divide());*/
 
         /*happy.setName("sad");
         empty.getMight();

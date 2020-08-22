@@ -4,9 +4,9 @@ public class Monster extends Enemy
     public String terrain;
     public int mightHolder = this.Might;
 
-    public Monster (String monsterName, int might, boolean IsHostile, int HP, int movement, double speed, String terrain, boolean hasAdv)
+    public Monster (String monsterName, int might, boolean IsHostile, int HP, int movement, double speed, boolean isWeakToMagic, String terrain, boolean hasAdv)
     {
-        super(monsterName, might, IsHostile, HP, movement, speed);
+        super(monsterName, might, IsHostile, HP, movement, speed, isWeakToMagic);
         this.terrain = terrain;
         this.hasAdvantage = hasAdv;
     }
