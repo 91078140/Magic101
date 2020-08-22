@@ -10,8 +10,10 @@ public class Magic101Driver
         Monster werewolf = new Monster("Lupin", 10, true, 30, 2, 4.2, "Woods", true);
         Monster goblin = new Monster("Bak", 5, true, 15, 1, 6.1, "Cave", false);
         Monster shadow = new Monster();
-        Slime blob = new Slime("Blobby", 2, false, 8, 1, 6.7, false);
-        Enemy[] enemyList = {happy, smog, empty, werewolf, goblin, shadow, blob};
+        Slime blob = new Slime("Blobby", 2, false, 5, 1, 6.7, false);
+        Slime glop = new Slime("Globy", 3, true, 8, 1, 6.7, true);
+        Slime muck = new Slime();
+        Enemy[] enemyList = {happy, smog, empty, werewolf, goblin, shadow, blob, glop, muck};
 
       /*  System.out.println(happy.toString());
         System.out.println(empty.toString());
@@ -26,6 +28,12 @@ public class Magic101Driver
         {
             System.out.println(e.toString());
         }
+
+        //more tests
+        System.out.println();
+        System.out.println(blob.divide());
+        System.out.println(glop.divide());
+        System.out.println(muck.divide());
 
         /*happy.setName("sad");
         empty.getMight();
