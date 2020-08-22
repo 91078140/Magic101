@@ -8,8 +8,9 @@ public class Magic101Driver
         Dragon empty = new Dragon();
         Monster werewolf = new Monster("Lupin", 10, true, 30, 2, 4.2, "Woods", true);
         Monster goblin = new Monster("Bak", 5, true, 15, 1, 6.1, "Cave", false);
+        Monster shadow = new Monster();
         Slime blob = new Slime("Blobby", 2, false, 8, 1, 6.7, false);
-        Enemy[] enemyList = {happy, empty, werewolf, goblin, blob};
+        Enemy[] enemyList = {happy, empty, werewolf, goblin, shadow, blob};
 
       /*  System.out.println(happy.toString());
         System.out.println(empty.toString());
