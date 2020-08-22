@@ -35,10 +35,14 @@ public class Magic101Driver
 
         //more tests
 
-        goblin.getsBoost("woods");// might starts at 5 now at 2
+       /* goblin.getsBoost("woods");// might starts at 5 now at 2
         System.out.println(goblin.toString());
         werewolf.getsBoost("woods"); //might starts at 10 now at 15
-        System.out.println(werewolf.toString());
+        System.out.println(werewolf.toString());*/
+
+       // more tests
+        System.out.println();
+        System.out.println(happy.fire());
 
 
     }

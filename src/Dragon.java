@@ -30,6 +30,22 @@ public class Dragon extends Enemy
         return wingspan;
     }
 
+    public String fire()
+    {
+        if(hasFire && isHostile)
+        {
+            return "It breaths fire! Drink fire resistant potions.";
+        }
+        else if(!hasFire && isHostile)
+        {
+            return "It doesn't have fire. Save fire resistant potions.";
+        }
+        else
+        {
+            return "It is friendly. We don't need to use any potions";
+        }
+    }
+
     public boolean getHasFire()
     {
         return hasFire;
