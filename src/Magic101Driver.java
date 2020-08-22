@@ -29,6 +29,20 @@ public class Magic101Driver
             System.out.println(e.toString());
         }
 
+
+        //more tests
+        System.out.println();
+        System.out.println(werewolf.takeDamage("spell"));
+        System.out.println(blob.takeDamage("spell"));
+        System.out.println(smog.takeDamage("melee"));
+        System.out.println();
+        for (Enemy e: enemyList)
+        {
+            System.out.println(e.toString());
+        }
+
+
+
         //more tests
        /* System.out.println();
         System.out.println(blob.divide());

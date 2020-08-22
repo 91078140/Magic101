@@ -31,9 +31,27 @@ public abstract class Enemy
     }
 
     //brain methods
-    public int takeDamage()
+    public String takeDamage(String attack)
     {
-        return 1;
+        int damageHolder = health;
+        if(attack.equalsIgnoreCase("Spell") && isWeakToMagic)
+        {
+            health -= (int)damageHolder/4;
+            return name + " takes " + (int)damageHolder/4 + " damage.";
+        }
+        else if(attack.equalsIgnoreCase("Spell") && !isWeakToMagic)
+        {
+            return name + " isn't weak to magic. No damage taken.";
+        }
+        else if(attack.equalsIgnoreCase("Melee") && !isWeakToMagic)
+        {
+            health -= (int)damageHolder/3;
+            return name + " takes " + (int)damageHolder/3 + " damage.";// would use weapon damage variable if it was in the game
+        }
+        else
+        {
+            return name + " can only be hurt by magic. No damage taken.";
+        }
     }
 
 
