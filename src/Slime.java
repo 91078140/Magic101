@@ -14,6 +14,21 @@ public class Slime extends Enemy
         this.canDivide = false;
     }
 
+    //brain methods
+
+    public String divide()
+    {
+        if(canDivide)
+        {
+            return "Use magic or it will split.";
+        }
+        else
+        {
+            return "It won't divide so attack it with whatever you want.";
+        }
+    }
+
+    // getters & setters
     public boolean getCanDivide()
     {
         return canDivide;
