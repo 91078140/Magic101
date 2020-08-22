@@ -5,12 +5,13 @@ public class Magic101Driver
     public static void main(String[] args)
     {
         Dragon happy = new Dragon("Happy", 20, false, 40, 3, 2.5, true, 4.6);
+        Dragon smog = new Dragon("Smog", 40, true, 60, 4, 2.1, true, 5.9);
         Dragon empty = new Dragon();
         Monster werewolf = new Monster("Lupin", 10, true, 30, 2, 4.2, "Woods", true);
         Monster goblin = new Monster("Bak", 5, true, 15, 1, 6.1, "Cave", false);
         Monster shadow = new Monster();
         Slime blob = new Slime("Blobby", 2, false, 8, 1, 6.7, false);
-        Enemy[] enemyList = {happy, empty, werewolf, goblin, shadow, blob};
+        Enemy[] enemyList = {happy, smog, empty, werewolf, goblin, shadow, blob};
 
       /*  System.out.println(happy.toString());
         System.out.println(empty.toString());
@@ -41,8 +42,10 @@ public class Magic101Driver
         System.out.println(werewolf.toString());*/
 
        // more tests
-        System.out.println();
+      /*  System.out.println();
         System.out.println(happy.fire());
+        System.out.println(smog.fire());
+        System.out.println(empty.fire());*/
 
 
     }
