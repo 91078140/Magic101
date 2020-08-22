@@ -2,6 +2,7 @@ public class Monster extends Enemy
 {
     public boolean hasAdvantage;
     public String terrain;
+    public int mightHolder = this.Might;
 
     public Monster (String monsterName, int might, boolean IsHostile, int HP, int movement, double speed, String terrain, boolean hasAdv)
     {
@@ -16,7 +17,7 @@ public class Monster extends Enemy
         this.terrain = "land";
         this.hasAdvantage = false;
     }
-
+// getters & setters
     public String getTerrain()
     {
         return terrain;
@@ -66,7 +67,20 @@ public class Monster extends Enemy
         }
         else
         {
-            return "Welp";
+            return "Good luck";
+        }
+    }
+
+    public void getsBoost(String currentTerrain)// checks if the terrain matches the monster home terrain
+    {
+        this.Might = mightHolder;
+        if(terrain.equalsIgnoreCase(currentTerrain) || hasAdvantage)
+        {
+            Might += 5;
+        }
+        else
+        {
+            Might -= 3;
         }
     }
 
