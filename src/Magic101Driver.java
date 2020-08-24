@@ -16,8 +16,11 @@ public class Magic101Driver
         Slime muck = new Slime();
         Enemy[] enemyList = {happy, smog, empty, werewolf, goblin, shadow, blob, glop, muck};
 
+        System.out.printf("Watch out there are %d enemies attacking. %n%n", Enemy.countEnemy);
+
         //array list
-        ArrayList<Enemy> enemyArrayList = new ArrayList<>();
+
+        /*ArrayList<Enemy> enemyArrayList = new ArrayList<>();
         enemyArrayList.add(happy);
         enemyArrayList.add(smog);
         enemyArrayList.add(werewolf);
@@ -25,11 +28,13 @@ public class Magic101Driver
         enemyArrayList.add(blob);
         enemyArrayList.add(glop);
 
+
+
         for (int i = 0; i < enemyArrayList.size(); i++)
         {
             System.out.println(enemyArrayList.get(i));
         }
-
+*/
 
       /*  System.out.println(happy.toString());
         System.out.println(empty.toString());
@@ -39,11 +44,13 @@ public class Magic101Driver
 
 
         System.out.println();
+
+
         //System.out.println(enemyList);
-//        for (Enemy e: enemyList)
-//        {
-//            System.out.println(e.toString());
-//        }
+        for (Enemy e: enemyList)
+        {
+            System.out.println(e.toString());
+        }
 
 
       /*  //more tests

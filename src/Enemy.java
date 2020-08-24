@@ -7,6 +7,7 @@ public abstract class Enemy
     public int Might;
     public boolean isHostile;
     public boolean isWeakToMagic;
+    static int countEnemy = 0;
 
     public Enemy(String Name, int might, boolean IsHostile, int HP, int movement, double speed, boolean isWeakToMagic)
     {
@@ -17,6 +18,7 @@ public abstract class Enemy
         this.movement = movement;
         this.speed = speed;
         this.isWeakToMagic = isWeakToMagic;
+        countEnemy++;
     }// full constructor
 
     public Enemy()
@@ -28,6 +30,7 @@ public abstract class Enemy
         this.movement = 0;
         this.speed = 0.0;
         this.isWeakToMagic = false;
+        countEnemy++;
     }
 
     //brain methods
