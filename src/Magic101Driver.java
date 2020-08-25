@@ -5,6 +5,9 @@ public class Magic101Driver
 {
     public static void main(String[] args)
     {
+        Sorcerer bell = new Sorcerer("Bell", 27, 50, 2, 3, "Lightning");
+        Sorcerer dalf = new Sorcerer("Gandalf", 42, 70, 3, 2.6, "Light");
+        Sorcerer baby = new Sorcerer();
         Dragon happy = new Dragon("Happy", 20, false, 40, 3, 2.5, false, true, 4.6);
         Dragon smog = new Dragon("Smog", 40, true, 60, 4, 2.1, false, true, 5.9);
         Dragon empty = new Dragon();
@@ -15,6 +18,13 @@ public class Magic101Driver
         Slime glop = new Slime("Globy", 3, true, 8, 1, 6.7, true, true);
         Slime muck = new Slime();
         Enemy[] enemyList = {happy, smog, empty, werewolf, goblin, shadow, blob, glop, muck};
+        Sorcerer[] playerList = {bell, dalf, baby};
+
+        for(Sorcerer s: playerList)
+        {
+            System.out.println(s.toString());
+        }
+
 
         System.out.printf("Watch out there are %d enemies attacking. %n%n", Enemy.countEnemy);
         System.out.printf("There are %d fire breathing dragons. %n%n", Dragon.fireCount);
