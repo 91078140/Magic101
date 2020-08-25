@@ -64,44 +64,42 @@ public class Magic101Driver
         }
 
 
-      /*  //more tests
+        //more tests
         System.out.println();
         System.out.println(werewolf.takeDamage("spell"));
         System.out.println(blob.takeDamage("spell"));
         System.out.println(smog.takeDamage("melee"));
         System.out.println();
-        for (Enemy e: enemyList)
-        {
-            System.out.println(e.toString());
-        }*/
+
 
 
 
         //more tests
-       /* System.out.println();
+        System.out.println();
         System.out.println(blob.divide());
         System.out.println(glop.divide());
-        System.out.println(muck.divide());*/
+        System.out.println(muck.divide());
+        System.out.println();
 
-        /*happy.setName("sad");
+        happy.setName("sad");
         empty.getMight();
         System.out.println(werewolf.reactToMight());
         werewolf.setMight(12);
         System.out.println(werewolf.reactToMight());
-        System.out.println(werewolf.toString());*/
+        System.out.println();
 
         //more tests
 
-       /* goblin.getsBoost("woods");// might starts at 5 now at 2
-        System.out.println(goblin.toString());
+        goblin.getsBoost("woods");// might starts at 5 now at 2
+       // System.out.println(goblin.toString());
         werewolf.getsBoost("woods"); //might starts at 10 now at 15
-        System.out.println(werewolf.toString());*/
+        //System.out.println(werewolf.toString());
 
        // more tests
-      /*  System.out.println();
+        System.out.println();
         System.out.println(happy.fire());
         System.out.println(smog.fire());
-        System.out.println(empty.fire());*/
+        System.out.println(empty.fire());
 
 
     }
