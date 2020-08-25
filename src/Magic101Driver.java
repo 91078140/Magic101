@@ -18,6 +18,11 @@ public class Magic101Driver
 
         System.out.printf("Watch out there are %d enemies attacking. %n%n", Enemy.countEnemy);
         System.out.printf("There are %d fire breathing dragons. %n%n", Dragon.fireCount);
+        if(Monster.onHomeTerrain)
+        {
+            System.out.println("You are on their turf. Watch out.");
+        }
+
 
 
         //array list

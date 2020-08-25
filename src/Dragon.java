@@ -3,7 +3,7 @@ public class Dragon extends Enemy
 
     public boolean hasFire;
     public double wingspan;
-    static int fireCount;
+    static int fireCount = 0;
 
     public Dragon(String dragonName, int might, boolean IsHostile, int HP, int movement, double speed, boolean isWeakToMagic, boolean hasFire, double wingspan)
     {

@@ -3,12 +3,15 @@ public class Monster extends Enemy
     public boolean hasAdvantage;
     public String terrain;
     public int mightHolder = this.Might;
+    static boolean onHomeTerrain = false;
 
     public Monster (String monsterName, int might, boolean IsHostile, int HP, int movement, double speed, boolean isWeakToMagic, String terrain, boolean hasAdv)
     {
         super(monsterName, might, IsHostile, HP, movement, speed, isWeakToMagic);
         this.terrain = terrain;
         this.hasAdvantage = hasAdv;
+        if(hasAdv)
+            onHomeTerrain = true;
     }
 
     public Monster ()
