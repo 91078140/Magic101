@@ -17,6 +17,7 @@ public class Magic101Driver
         Enemy[] enemyList = {happy, smog, empty, werewolf, goblin, shadow, blob, glop, muck};
 
         System.out.printf("Watch out there are %d enemies attacking. %n%n", Enemy.countEnemy);
+        System.out.printf("There are %d fire breathing dragons. %n%n", Dragon.fireCount);
 
 
         //array list

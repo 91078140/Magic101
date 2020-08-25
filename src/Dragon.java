@@ -3,13 +3,15 @@ public class Dragon extends Enemy
 
     public boolean hasFire;
     public double wingspan;
-
+    static int fireCount;
 
     public Dragon(String dragonName, int might, boolean IsHostile, int HP, int movement, double speed, boolean isWeakToMagic, boolean hasFire, double wingspan)
     {
         super(dragonName, might, IsHostile, HP, movement, speed, isWeakToMagic);
         this.hasFire = hasFire;
         this.wingspan = checkWingSpan(wingspan);
+        if (hasFire)
+            fireCount++;
 
     }// full constructor
 
@@ -18,7 +20,6 @@ public class Dragon extends Enemy
         super();
         this.hasFire = false;
         this.wingspan = 0;
-
     }
 
     //brain method
