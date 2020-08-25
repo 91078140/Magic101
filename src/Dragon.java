@@ -4,11 +4,13 @@ public class Dragon extends Enemy
     public boolean hasFire;
     public double wingspan;
 
+
     public Dragon(String dragonName, int might, boolean IsHostile, int HP, int movement, double speed, boolean isWeakToMagic, boolean hasFire, double wingspan)
     {
         super(dragonName, might, IsHostile, HP, movement, speed, isWeakToMagic);
         this.hasFire = hasFire;
         this.wingspan = checkWingSpan(wingspan);
+
     }// full constructor
 
     public Dragon()
@@ -16,6 +18,7 @@ public class Dragon extends Enemy
         super();
         this.hasFire = false;
         this.wingspan = 0;
+
     }
 
     //brain method
@@ -28,6 +31,31 @@ public class Dragon extends Enemy
             wingspan++;
         }
         return wingspan;
+    }
+
+    public String evaluate()
+    {
+        if(Might < 10)
+        {
+            return "Don't worry it's only D Class.";
+        }
+        if(Might > 10 && Might <= 20)
+        {
+            return "Be careful it's C Class.";
+        }
+        else if(Might > 20 && Might <= 30)
+        {
+            return "Be cautious it's B Class.";
+        }
+        else if(Might > 30 && Might <= 40)
+        {
+            return "Don't fight it alone it's A Class.";
+        }
+        else
+        {
+            return "Run away it's S Class.";
+        }
+
     }
 
     public String fire()

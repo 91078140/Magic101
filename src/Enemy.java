@@ -12,7 +12,7 @@ public abstract class Enemy
     public Enemy(String Name, int might, boolean IsHostile, int HP, int movement, double speed, boolean isWeakToMagic)
     {
         this.name = Name;
-        this.Might = might;
+        this.Might = checkMight(might);
         this.isHostile = IsHostile;
         this.health = HP;
         this.movement = movement;
@@ -55,6 +55,16 @@ public abstract class Enemy
         {
             return name + " can only be hurt by magic. No damage taken.";
         }
+    }
+
+    public int checkMight(int Might)
+    {
+        while(Might < 0)
+        {
+            System.out.println("Can't have negative might. Try Again.");
+            Might++;
+        }
+        return Might;
     }
 
 

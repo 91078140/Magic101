@@ -18,6 +18,7 @@ public class Magic101Driver
 
         System.out.printf("Watch out there are %d enemies attacking. %n%n", Enemy.countEnemy);
 
+
         //array list
 
         /*ArrayList<Enemy> enemyArrayList = new ArrayList<>();
