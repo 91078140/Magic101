@@ -33,7 +33,17 @@ public class Sorcerer
 
     //brain methods
 
-
+    public void drinkPotion(String potion)
+    {
+        if(potion.equalsIgnoreCase("might"))
+            might += 5;
+        else if(potion.equalsIgnoreCase("health") || potion.equalsIgnoreCase("hp"))
+            health += 10;
+        else if(potion.equalsIgnoreCase("speed"))
+            speed += 0.5;
+        else if(potion.equalsIgnoreCase("magic point") || potion.equalsIgnoreCase("mp"))
+            health += 10;
+    }
 
     public String castSpell()
     {
@@ -44,7 +54,7 @@ public class Sorcerer
         }
         else
         {
-            return "Not enough Magic Points to cast a spell. Drink a mana potion.";
+            return "Not enough Magic Points to cast a spell. Drink a MP potion.";
         }
     }
 
