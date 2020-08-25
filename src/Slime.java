@@ -31,6 +31,14 @@ public class Slime extends Enemy
         }
     }
 
+    public String melt()
+    {
+        if(health <= 0)
+            return "The slime is melting.";
+        else
+            return "You need to do " + health + " more damage.";
+    }
+
     // getters & setters
     public boolean getCanDivide()
     {

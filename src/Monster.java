@@ -41,6 +41,8 @@ public class Monster extends Enemy
         this.hasAdvantage = newAdv;
     }
 
+    //brain methods
+
     public String reactToMight()
     {
         if(Might <= 10)
