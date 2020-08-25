@@ -22,6 +22,10 @@ public class Magic101Driver
         {
             System.out.println("You are on their turf. Watch out.");
         }
+        if(Slime.stopDivide)
+        {
+            System.out.println("Don't let the slimes divide. Use magic.");
+        }
 
 
 

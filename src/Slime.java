@@ -1,11 +1,14 @@
 public class Slime extends Enemy
 {
     public boolean canDivide;
+    static boolean stopDivide = false;
 
     public Slime(String slimeName, int might, boolean IsHostile, int HP, int movement, double speed, boolean isWeakToMagic, boolean canDivide)
     {
         super(slimeName, might, IsHostile, HP, movement, speed, isWeakToMagic);
         this.canDivide = canDivide;
+        if (canDivide)
+            stopDivide = true;
     }
 
     public Slime()
