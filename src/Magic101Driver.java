@@ -120,6 +120,13 @@ public class Magic101Driver
         System.out.println(smog.fire());
         System.out.println(empty.fire());
 
+        //more tests
+        System.out.println();
+        System.out.println(bell.castSpell());
+        System.out.println(bell.getMp());
+        System.out.println(dalf.castSpell());
+        System.out.println(baby.castSpell());
+
 
     }
 }

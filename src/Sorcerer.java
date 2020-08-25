@@ -53,7 +53,7 @@ public class Sorcerer
         if(mp >= 4)
         {
             mp -= 4;
-            return "You casted a powerful spell.";
+            return name + " casted a powerful spell.";
         }
         else
         {
