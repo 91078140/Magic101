@@ -7,7 +7,8 @@ public class Sorcerer
     public String name;
     public int mp;
     public String magicElement;
-    static int party;
+    static int party = 0;
+
 
     public Sorcerer(String Name, int might, int HP, int movement, double speed, int MP, String magicElement)
     {
@@ -18,6 +19,7 @@ public class Sorcerer
         this.speed = speed;
         this.mp = MP;
         this.magicElement = magicElement;
+        party++;
     }
 
     public Sorcerer()
@@ -29,6 +31,7 @@ public class Sorcerer
         speed = 0.0;
         mp = 0;
         magicElement = null;
+        party++;
     }
 
     //brain methods

@@ -5,8 +5,8 @@ public class Magic101Driver
 {
     public static void main(String[] args)
     {
-        Sorcerer bell = new Sorcerer("Bell", 27, 50, 2, 3, "Lightning");
-        Sorcerer dalf = new Sorcerer("Gandalf", 42, 70, 3, 2.6, "Light");
+        Sorcerer bell = new Sorcerer("Bell", 27, 50, 2, 3, 20, "Lightning");
+        Sorcerer dalf = new Sorcerer("Gandalf", 42, 70, 3, 2.6, 45, "Light");
         Sorcerer baby = new Sorcerer();
         Dragon happy = new Dragon("Happy", 20, false, 40, 3, 2.5, false, true, 4.6);
         Dragon smog = new Dragon("Smog", 40, true, 60, 4, 2.1, false, true, 5.9);
@@ -23,6 +23,15 @@ public class Magic101Driver
         for(Sorcerer s: playerList)
         {
             System.out.println(s.toString());
+        }
+
+        System.out.println();
+
+        if(Sorcerer.party * 3 >= Enemy.countEnemy)
+            System.out.println("The party is big enough to handle the enemies.");
+        else
+        {
+            System.out.println("Your party is too small to handle the monsters. Try to increase your party size.");
         }
 
 
