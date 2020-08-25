@@ -34,6 +34,23 @@ public class Sorcerer
         party++;
     }
 
+    public Sorcerer(String name, int might, int mp, String magicElement)
+    {
+        this.name = name;
+        this.might = might;
+        this.mp = mp;
+        this.magicElement = magicElement;
+        party++;
+    }
+
+    public Sorcerer(String name, int health, int movement, double speed)
+    {
+        this.name = name;
+        this.health = health;
+        this.movement = movement;
+        this.speed = speed;
+    }
+
     //brain methods
 
     public void drinkPotion(String potion)
